@@ -47,3 +47,14 @@ git push --set-upstream origin addFalse_sh
 ```
 
 - Add repo to travis (enable repository on travis)
+- Create `.travis.yml` with test that always fail
+
+```
+language: generic
+dist: xenial
+sudo: required
+script:
+- exit 1
+```
+
+
