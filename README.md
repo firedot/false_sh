@@ -4,13 +4,10 @@ Create a script that always return False
 
 # TODO
 
-- Create new repo
-- Set description
-- Select create README
-- Select License, choose MIT
-- create new branch
-- Add DETAILED.md
 - Create new branch `addVagrantfile`
-- Create Vagrantfile for a VM with `vagrant init -m alvaro/xenial64`1
-- setup release for `true.sh`
+- Create Vagrantfile for a VM with `vagrant init -m firedot/xenial64`
+- Add repo to travis (enable repository on travis)
+- Create `.travis.yml` with test that always fail
+- setup release for `false.sh`
 - do a release `0.1` to confirm all works
+
