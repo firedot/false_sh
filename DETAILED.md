@@ -46,3 +46,4 @@ git commit -m "Added false.sh"
 git push --set-upstream origin addFalse_sh
 ```
 
+- Add repo to travis (enable repository on travis)
