@@ -57,4 +57,28 @@ script:
 - exit 1
 ```
 
+- Create test that tests ```false.sh``` with Travis
+
+```
+#!/usr/bin/env bash
+
+bash true.sh
+if [ $? -eq 1 ]; then
+  echo SUCCESS: test pass
+else
+  echo FAILURE: test fail
+  exit 1
+fi
+```
+
+- Update ```.travis.yml``` to use ```test.sh```
+
+```
+language: generic
+dist: xenial
+sudo: required
+script:
+- bash test.sh
+```
+
 
