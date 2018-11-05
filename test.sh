@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-bash true.sh
+bash false.sh
 if [ $? -eq 1 ]; then
   echo SUCCESS: test pass
 else
