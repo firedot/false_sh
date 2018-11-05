@@ -7,4 +7,27 @@
 - Select License, choose MIT
 - create new branch
 - Add this file
+- Create new branch `addVagrantfile`
+- Create Vagrantfile for a VM with `vagrant init -m firedot/xenial64`
 
+```
+cat Vagrantfile
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "firedot/xenial64"
+end
+```
+
+- Create ```.gitignore``` with ```.vagrant/``` in it: 
+
+```
+echo '.vagrant/' >> .gitignore
+```
+
+- Git add the new files
+- Git commit the new files
+- Git push the new files
+
+```
+git push --set-upstream origin addVagrantfile
+```
