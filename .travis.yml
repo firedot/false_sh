@@ -1,5 +1,10 @@
 sudo: required
 script:
 - bash test.sh
-
-
+deploy:
+  provider: releases
+  api_key:
+    secure: st0QTjs/5tVcpyzN0rOXrXis36S2jBBH8ELVSK1TR5mD0qhpcCacpRSU+c5lvGIvYisyBcCjQq+DXig01B5YKcUe1pJiYgju9EvDXK+m2OXQdnDkIayWuwr25wHvK63CKDEKxOcXgIgwEYHQg+d0qfbiI04568w87KcAoK41qxCvGhrs67BJPXu7ETNCFE5bU1OmDlFW4B5bvEXJACaA4ZzJArjyaI/0+vBXmeW8JN6keUvPNufDTOsO5skN76710sQeW5aUU3LZtqVqKH/tR9GmZ6dTdAkiGfX/0z8UnqR/oUcRsBmUVBB61n6UlxN+uC6jYqc1jiAas/Bs9EJjk4zEDWYRzaLmo3LL5Yuftp9BDkIZbCq2FI821nRPFkPa6Ot6HqESHH7aUSdQHO4tQTTKCwccCtdOD5o5d+WZLR//5llSco5Nmqj4hF+vF3/06GYr3MmSrkJ4nkHaPpF7/BKECf3DRSTEsZ3WF7lN7TvjjCpWeoB/w9nRFglUOjylZ+TzkBE2yfe/kaXDjJQSX/p2vwE9uajeuEGXIKS0g+AgF/jyVdHQGgOO9wJcKRFWHwRYtJ3Ting3NH9D8jbIxezJQxtQIYqQis8YVpBcuBSKM09zt1fajmx9avH3xsKhlFQoMYxMmFqpeUlE6jIrPYq8v1RrTdSUDELq7CZW/DM=
+  file: false.sh
+  on:
+    repo: firedot/false_sh
