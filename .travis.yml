@@ -3,5 +3,10 @@ dist: xenial
 sudo: required
 script:
 - bash test.sh
-
-
+deploy:
+  provider: releases
+  api_key:
+    secure: TTdVjEjozSzTKS5AlqfbcfKi/EvNsbPGgOf12SW39FONS4NyvCcQIyvDZoYztw1WJFl2Z5W1+6Rwt5dtLcI8t29jFbNcsZ12tJssQY8yNPIdoCZOBKhFdsg6oFZLnrsdHwPDfDvc4OxuNO26fYJ7243lyBR4CAkEIb8XECMf+5tnDqqPWUd3t5aoRE37xn1Nrv+KeIFLIcVQRjCMf+BAuxLHRj1E75PWL5FTzTeLAhTxMSNLNbtptu8mRrvtH58wPv8ucNXde3ZSVd/ZgGKa6/QbLoXLVNGgVlZ29NalKA5BHjnD4yLDPsypKSPZotc3+0l9c2R6fyXwH/B+diUo0Rt8VDralflVH5xpYh6yNAQ188t1THyXxdwb4VaLw8W6EE7pTUb7wXQ8rbAX98QTeZUZzheBIUOZHXrq4beinDQslVYtgqguFJaMQ+YpW40nZGJryDHojm7EMRQT9xBD5/PNgFFgYl0IEpDnmia5W8oQ3wcVzxOc9KOUhpgBXVeMQl9sW6/tkoc2BYw1YsK3M/HZqrgIl2gJxVfMSFSeBFn5m2CSa5LUV4LINGeeETH5HpVX10++INhgc93HFoP1AUN+3xwtcoTVf/D4EGHm6VkNulbDxmVuQ7ZC4HjwSIVEEBGcXvzZoW/shQ2UhKz5sEFKduBF7qJNQ278VR5LAGE=
+  file: false.sh
+  on:
+    repo: firedot/false_sh
