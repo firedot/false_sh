@@ -31,3 +31,18 @@ echo '.vagrant/' >> .gitignore
 ```
 git push --set-upstream origin addVagrantfile
 ```
+- Create new branch ```addFalse_sh```
+- Create ```false.sh``` that produces and exit code of 1
+
+```
+#!/usr/bin/env bash
+
+exit 1
+```
+- Add ```false.sh``` to this repo
+```
+git add false.sh
+git commit -m "Added false.sh"
+git push --set-upstream origin addFalse_sh
+```
+
