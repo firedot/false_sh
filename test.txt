@@ -1,3 +1,0 @@
-This is a test file that does nothing. 
-
-Its purpose is to check that Travis releases only when there is a new tag. 
