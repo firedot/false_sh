@@ -31,6 +31,19 @@ echo '.vagrant/' >> .gitignore
 ```
 git push --set-upstream origin addVagrantfile
 ```
+
+- Create a pull request
+- Merge the files to the master branch
+- On the machine you're working: 
+  - checkout to master
+     ```
+     git checkout master
+     ```
+  - Pull the merged changes: 
+    ```
+    git pull origin master
+    ```
+
 - Create new branch ```addFalse_sh```
 - Create ```false.sh``` that produces and exit code of 1
 
@@ -45,6 +58,17 @@ git add false.sh
 git commit -m "Added false.sh"
 git push --set-upstream origin addFalse_sh
 ```
+- Create a pull request
+- Merge the files to the master branch
+- On the machine you're working: 
+  - checkout to master
+     ```
+     git checkout master
+     ```
+  - Pull the merged changes: 
+    ```
+    git pull origin master
+    ```
 
 - Add repo to travis (enable repository on travis)
 - Create `.travis.yml` with test that always fail
@@ -80,3 +104,15 @@ sudo: required
 script:
 - bash test.sh
 ```
+- Create a pull request
+- Merge the files to the master branch
+- On the machine you're working: 
+  - checkout to master
+     ```
+     git checkout master
+     ```
+  - Pull the merged changes: 
+    ```
+    git pull origin master
+    ```
+
