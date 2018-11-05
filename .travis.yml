@@ -3,5 +3,3 @@ dist: xenial
 sudo: required
 script:
 - bash test.sh
-
-
