@@ -25,7 +25,15 @@ echo '.vagrant/' >> .gitignore
 ```
 
 - Git add the new files
+```
+git add .gitignore Vagrantfile
+```
+
 - Git commit the new files
+```
+git commit -m "Added new files"
+```
+
 - Git push the new files
 
 ```
@@ -34,6 +42,7 @@ git push --set-upstream origin addVagrantfile
 
 - Create a pull request
 - Merge the files to the master branch
+
 - On the machine you're working: 
   - checkout to master
      ```
